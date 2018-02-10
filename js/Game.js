@@ -115,7 +115,7 @@ createItems: function() {
       this.player.body.velocity.x -= 200;
     }
     else if(this.cursors.right.isDown) {
-      this.player.body.velocity.x += 800;
+      this.player.body.velocity.x += 200;
     }
     if (this.player.x > 8000 && this.player.x < 11505) {
         this.game.physics.arcade.moveToXY(this.player, 11505, 220, 400, )
