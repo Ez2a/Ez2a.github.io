@@ -43,8 +43,9 @@ TopDownGame.Game.prototype = {
     this.game.add.text(3275, 140, "They carried circles.", { font: "38px 'Roboto'", fill: "#FF9174", align: "center" });
     this.game.add.text(3875, 300, "And they brought their holy numbers.", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
     this.game.add.text(4075, 270, "3.14159", { font: "24px 'Roboto'", fill: "#A7A7A7", align: "center" });
-      this.game.add.text(4175, 170, "3.14159", { font: "24px 'Roboto'", fill: "#A7A7A7", align: "center" });
-    this.game.add.text(4675, 50, "And their sharp sticks.", { font: "40px 'Roboto'", fill: "#EA7A5D", align: "center" });
+    this.game.add.text(4175, 170, "3.14159", { font: "24px 'Roboto'", fill: "#A7A7A7", align: "center" });
+    this.game.add.text(4535, 90, "And their sharp sticks.", { font: "40px 'Roboto'", fill: "#EA7A5D", align: "center" });
+    this.game.add.text(4535, 140, "(Don't touch them)", { font: "40px 'Roboto'", fill: "#EA7A5D", align: "center" });
     this.game.add.text(5405, 200, "The circles easily conquered squareville.", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
     this.game.add.text(6405, 160, "The squares were cut...", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
     this.game.add.text(6635, 300, "And reassembled.", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
