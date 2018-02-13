@@ -5,37 +5,43 @@
 		<meta charset="utf-8" />
 		<title>YOU ARE</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<script type="text/javascript" src="js/phaser.js"></script>
+		<script type="text/javascript" src="js/phaser.min.js"></script>
 		<script type="text/javascript" src="js/Boot.js"></script>
 		<script type="text/javascript" src="js/Preload.js"></script>
 		<script type="text/javascript" src="js/Game.js"></script>
         
 		<style>
-		  body {
-		    padding: 0px;
-		    margin: 0px;
-            background-color: #E0E0E0;
-		  }
+            body {
+                padding: 0px;
+                margin: 0px;
+                background-color: #E0E0E0;
+            }
             @font-face {
-            font-family: 'Roboto';
-            src: url('../assets/fonts/roboto-webfont.eot?#iefix') format('embedded-opentype'),
-                   url('../assets/fonts/roboto-webfont.woff') format('woff'),
-                   url('../assets/fonts/roboto-webfont.ttf') format('truetype'),
-                   url('../assets/fonts/roboto-webfont.svg#Avalon') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
+                font-family: 'Roboto';
+                src: url('../assets/fonts/roboto-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('../assets/fonts/roboto-webfont.woff') format('woff'),
+                     url('../assets/fonts/roboto-webfont.ttf') format('truetype'),
+                     url('../assets/fonts/roboto-webfont.svg#Avalon') format('svg');
+                font-weight: normal;
+                font-style: normal;
             }
             .fontLoader {
-               position: absolute;
-               left: -1000px;
-               visibility: hidden;
+                position: absolute;
+                left: -1000px;
+                visibility: hidden;
             }
-            .foot {
-                height: 20px;
+            #foot {
+                height: 90px;
                 background-color: #D3D3D3;
+                font-family: 'Roboto';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
             }
-
+            #infoot {
+                padding-top: 20px;
+                padding-left: 30px
+            }
 		  </style>
 	</head>
 
@@ -43,6 +49,6 @@
 		<!-- include the main game file -->
         <div class="fontLoader" style="font-family: Roboto;">-</div>
 		<script src="js/main.js"></script>
-        <!--<footer id="foot">By Ezra Kang</footer>-->
+        <footer id="foot"><p id="infoot">By Ezra Kang</p></footer>
 	</body>
 </html>

@@ -96,7 +96,7 @@ createItems: function() {
   update: function() {
     //collision
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
-    this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
+    this.game.physics.arcade.overlap(this.player, this.items, this.hit, null, this);
     //player movement
     
     this.player.body.velocity.x = 0;
@@ -119,7 +119,7 @@ createItems: function() {
       this.player.body.velocity.x += 200;
     }
     if (this.player.x > 8000 && this.player.x < 11505) {
-        this.game.physics.arcade.moveToXY(this.player, 11505, 220, 400, )
+        this.game.physics.arcade.moveToXY(this.player, 11505, 220, 400, 0)
     }
     if (this.player.x > 9505 && this.player.x < 9906) {
         this.player.loadTexture('cut');
@@ -135,7 +135,12 @@ createItems: function() {
         this.player.body.velocity.y = 0;
     }
   },
-    collect: function() {
+  hit: function() {
+    //restart game if the stick is touched
     this.game.state.restart();
+    //display gameover text
+    var gameoverText = this.game.add.text(0, 0, "GAME OVER", { font: "40px 'Roboto'", fill: "#FF5225", align: "center" });
+    gameoverText.fixedToCamera = true;
+    gameoverText.cameraOffset.setTo(65, 150); 
   },
 };
