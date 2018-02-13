@@ -58,7 +58,7 @@ TopDownGame.Game.prototype = {
     this.game.add.text(10505, 140, "YOU ARE", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
     this.game.add.text(10505, 300, "REASSEMBLED", { font: "48px 'Roboto'", fill: "#FF4D1E", align: "center" });
     this.game.add.text(11405, 100, "YOU ARE", { font: "48px 'Roboto'", fill: "#000000", align: "center" });
-    this.game.add.text(11405, 320, "CHAIR", { font: "48px 'Roboto'", fill: "#A95C48", align: "center" });
+    this.game.add.text(11405, 320, "CHAIR", { font: "48px 'Roboto'", fill: "#b8a148", align: "center" });
   },
 
 createItems: function() {
