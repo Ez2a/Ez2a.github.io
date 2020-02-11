@@ -1,0 +1,71 @@
+/* how is this ALREADY this bad?*/
+
+html {
+    background-color: #B26875;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+#every {
+    background: #E5989B;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 100px auto;
+    max-width: 1200px;
+    border-radius: 30px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+a {
+    color: #B26875;
+}
+
+#section {
+    background-color: #FFB4A2;
+    color: black;
+    max-width: 1200px;
+    padding: 3em 3em 4em;
+    padding-bottom: 1000px;
+}
+
+#init {
+    padding: 3em 3em 4em;
+    padding-bottom: 1000px;
+}
+
+#section2 {
+    background-color: #FFCDB2;
+    padding: 3em 3em 4em;
+    padding-bottom: 2000px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+h1 {
+    padding: .5em 1em;
+    text-align: center;
+    font-size: 50px
+}
+
+#title1 {
+    padding-top: 40px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #45444C;
+    color: white;
+    width: 100%;
+    font-size: 45px;
+    padding: 20px;
+    padding-left: 50px;
+    left: 0px;
+}
