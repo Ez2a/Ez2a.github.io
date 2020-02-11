@@ -1,54 +1,66 @@
+
+
 <!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset="utf-8" />
-		<title>YOU ARE</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<script type="text/javascript" src="js/phaser.min.js"></script>
-		<script type="text/javascript" src="js/Boot.js"></script>
-		<script type="text/javascript" src="js/Preload.js"></script>
-		<script type="text/javascript" src="js/Game.js"></script>
+<html> <!--just a real quick barebones website-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>3dprints.</title>
+        <meta name="desription" content="Guide to all your printing needs.">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="init">
+        <h1>3dprint.bar</h1>
+        <h2>Instructions for utilizing the various 3d printers in the engineering lab. Under construction.</h2>
+        <h3 id="title1">Ultimaker 3</h3>
+        <ol>
+            <li>Create model in your favorite CAD software, then save as .stl</li>
+            <li>Open .stl file in Cura Ultimaker (should be on school computers)</li>
+            <li>Orient model for optimal print position (on a flat edge with only a small amount of overhangs(parts of model that does not have any supporting material below it and hangs in the air, if part has many long overhangs then use resin printer.)) Buttons on side allow you to orient part.</li>
+            <li>Ensure that the correct printer core and material is selected in upper right corner. Usually, the AA core is core 1 and BB core is core 2. As for material, think about what material you need to use (ABS is usually best) and select it from dropdown menu.</li>
+            <li>Connect USB drive to computer, and click on dropdown in lower right corner to save to usb drive. Click 'slice' in lower right corner to prepare the part for printing and save to drive.</li>
+            <li>Remove drive from computer and insert into Ultimaker 3.</li>
+            <li>Check materials spool to make sure it is the type you selected when preparing the print. Click <a href="index.html#materialulti">here</a> to remove/change material for the ultimaker.</li>
+            <li>Click the first option on the printer to open the drive. Select your print (should be the first option.) Click print.</li>
+            <li>Wait for extruder and bed to head up, then watch print as it starts to make sure it is printing as expected. Do not use adhesives or tape. If unconfident in whether a part of the print will print correctly, please make plans to watch print for that section.</li>
+            <li>When print is finished, ideally remove print while the bed is still hot but it can be removed when it is cold, too. Remove using prying tools such as the various knives in the printing area. Do not damage the bed. Clean bed affter if neccesary.</li>
+        </ol>
+        </div>
         
-		<style>
-            body {
-                padding: 0px;
-                margin: 0px;
-                background-color: #E0E0E0;
-            }
-            @font-face {
-                font-family: 'Roboto';
-                src: url('../assets/fonts/roboto-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('../assets/fonts/roboto-webfont.woff') format('woff'),
-                     url('../assets/fonts/roboto-webfont.ttf') format('truetype'),
-                     url('../assets/fonts/roboto-webfont.svg#Avalon') format('svg');
-                font-weight: normal;
-                font-style: normal;
-            }
-            .fontLoader {
-                position: absolute;
-                left: -1000px;
-                visibility: hidden;
-            }
-            #foot {
-                height: 90px;
-                background-color: #D3D3D3;
-                font-family: 'Roboto';
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-            }
-            #infoot {
-                padding-top: 20px;
-                padding-left: 30px
-            }
-		  </style>
-	</head>
+        <div id="section">
+        <h3>Tazbot (not mini)</h3>
+        <ol>
+            <li>Create model in your favorite CAD software, then save as .stl</li>
+            <li>Open .stl file in Taz Ultimaker (should be on school computers)</li>
+            <li>Orient model for optimal print position (on a flat edge with only a small amount of overhangs(parts of model that does not have any supporting material below it and hangs in the air, if part has many long overhangs then use resin printer.)) Buttons on side allow you to orient part.</li>
+            <li>Ensure that the correct material is selected in upper right corner. For material, think about what material you need to use (ABS is usually best) and select it from dropdown menu.</li>
+            <li>Connect SD card to computer (which can usually be found inside the tazbots, and click on dropdown in lower right corner to save to SD card. Click 'slice' in lower right corner to prepare the part for printing and save to card.</li>
+            <li>Remove card from computer and insert into Tazbot.</li>
+            <li>Check materials spool to make sure it is the type you selected when preparing the print. Click <a href="index.html#materialtaz">here</a> to remove/change material for the tazbot.</li>
+            <li>Click the first option on the printer to open the drive. Select your print (should be the first option.) Click print.</li>
+            <li>Wait for extruder and bed to head up, then watch print as it starts to make sure it is printing as expected. Do not use adhesives or tape. If unconfident in whether a part of the print will print correctly, please make plans to watch print for that section.</li>
+            <li>When print is finished, ideally remove print while the bed is still hot but it can be removed when it is cold, too. Remove using prying tools such as the various knives in the printing area. Do not damage the bed. Clean bed affter if neccesary.</li>
+        </ol>
+        </div>
+        
+        <div id="section2">
+        <h3>Tazbot mini</h3>
+            <p>Coming soon</p>
+        
+        <h3 id="materialulti">Changing material for the ultimaker</h3>
+            <p>Coming soon</p>
+    
+        <h3 id=materialtaz>Changing material for the tazbot</h3>
+        <p>Coming soon</p>
+        </div>
 
-	<body>  
-		<!-- include the main game file -->
-        <div class="fontLoader" style="font-family: Roboto;">-</div>
-		<script src="js/main.js"></script>
-        <footer id="foot"><p id="infoot">By Ezra Kang</p></footer>
-	</body>
+    </body>
+    
+    <footer><!--shoulda just used bootstrap-->
+        <p>3dprint.bar</p>
+    </footer>
+
 </html>
