@@ -14,9 +14,8 @@ html {
     font-size: 16px;
     line-height: 1.75;
     margin: 100px auto;
-    max-width: 1200px;
+    max-width: 1000px;
     border-radius: 30px;
-    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +32,7 @@ a {
     background-color: #FFB4A2;
     color: black;
     max-width: 1200px;
-    padding: 3em 3em 4em;
+    padding: 2em 3em 4em;
     padding-bottom: 1000px;
 }
 
@@ -65,7 +64,8 @@ footer {
     color: white;
     width: 100%;
     font-size: 45px;
+    position: absolute;
     padding: 20px;
     padding-left: 50px;
-    left: 0px;
+    margin-left: -20px;
 }
